@@ -1,0 +1,100 @@
+{
+  "artifact_id": "registered_measure_contextual_multiplexing_016",
+  "artifact_sha256": "8349e78faabcc789b19e3211453a477c2686dd265e7c16443d4f21c226396258",
+  "audit_pass": true,
+  "boundary": {
+    "Alice_output_uses_only_x_proved": false,
+    "Bob_output_uses_only_y_proved": false,
+    "arbitrary_setting_interleaving_robustness_closed": true,
+    "joint_context_registrar_used": true,
+    "measurement_independence_physical_assumption_derived": false,
+    "native_nonperiodic_history_provenance_closed": false,
+    "preassigned_local_answer_table": false,
+    "source_weight_depends_on_setting_schedule": false,
+    "spacelike_local_outcome_generation_proved": false
+  },
+  "checks": {
+    "Audit015_passes": true,
+    "CHSH_error_bound_is_two_times_sum_inverse_context_counts": true,
+    "conditional_cell_count_discrepancy_below_one": true,
+    "conditional_cell_frequency_discrepancy_below_inverse_context_count": true,
+    "context_correlation_error_below_two_over_context_count": true,
+    "context_state_depends_only_on_context_occurrence_count": true,
+    "distinct_context_transitions_commute": true,
+    "every_context_state_equals_standalone_state_at_local_count": true,
+    "finite_contextual_marginal_error_below_two_over_context_count": true,
+    "infinite_sampling_of_each_context_implies_target_CHSH_limit": true,
+    "joint_context_registrar_explicit": true,
+    "no_preassigned_counterfactual_local_answer_table": true,
+    "setting_schedule_does_not_change_context_weight_laws": true,
+    "single_context_full_table_closed": true,
+    "target_contextual_local_marginals_one_half": true
+  },
+  "correlation_theorem": {
+    "CHSH_error": "|Shat-S|<2*(1/m00+1/m01+1/m10+1/m11)",
+    "finite_error": "|Ehat_c-Gamma_c|<2/m_c",
+    "limit_if_all_context_counts_diverge": "1+3/sqrt(5)"
+  },
+  "earned_statement": "The full Program-02 receipt tables can be multiplexed across an arbitrarily interleaved four-context Bell schedule without disturbing any context's conditional frequencies. Give each setting pair its own registration state and advance only the selected context. Distinct context transitions commute because they act on disjoint state factors. Therefore context c after any global schedule is exactly its standalone registrar after m_c occurrences. Every cell retains Audit015's count discrepancy below one and conditional frequency discrepancy below 1/m_c. If every context occurs infinitely often, all conditional tables and the CHSH statistic converge to the Program-02 algebraic targets. This is a joint contextual registration theorem, not yet a proof that Alice and Bob generate their individual outputs using only their respective local settings.",
+  "execution_checks": {
+    "blocks": {
+      "context_counts": {
+        "00": 2200,
+        "01": 2600,
+        "10": 2600,
+        "11": 2600
+      },
+      "global_trial_count": 10000,
+      "standalone_mismatch_contexts": []
+    },
+    "irregular": {
+      "context_counts": {
+        "00": 6300,
+        "01": 2800,
+        "10": 2100,
+        "11": 2100
+      },
+      "global_trial_count": 13300,
+      "standalone_mismatch_contexts": []
+    },
+    "round_robin": {
+      "context_counts": {
+        "00": 2500,
+        "01": 2500,
+        "10": 2500,
+        "11": 2500
+      },
+      "global_trial_count": 10000,
+      "standalone_mismatch_contexts": []
+    },
+    "skewed": {
+      "context_counts": {
+        "00": 14043,
+        "01": 3512,
+        "10": 1756,
+        "11": 689
+      },
+      "global_trial_count": 20000,
+      "standalone_mismatch_contexts": []
+    }
+  },
+  "global_state": {
+    "context_transition": "T_c acts only on S_c",
+    "distinct_context_transitions_commute": true,
+    "form": "S_00 x S_01 x S_10 x S_11"
+  },
+  "marginal_theorem": {
+    "finite_error": "<2/m_c",
+    "target": "1/2"
+  },
+  "next_gate": "Separate statistical contextual multiplexing from causal outcome realization. Record explicitly that the registrar is joint and does not assign counterfactual A0,A1,B0,B1. Then test whether the native relational apparatus supplies an operational implementation compatible with Alice-local and Bob-local setting interfaces, without converting the model back into Bell-local factorization.",
+  "schedule_theorem": {
+    "cell_count_discrepancy": "|N_ab^c-m_c*w_ab^c|<1",
+    "cell_frequency_discrepancy": "|N_ab^c/m_c-w_ab^c|<1/m_c",
+    "context_occurrence_count": "m_c=N^c(n)",
+    "context_state": "S_c(schedule)=T_c^m_c S_c(0)",
+    "schedule_order_relevant": false
+  },
+  "verdict": "four_independent_context_registrars_with_disjoint_state_support_make_the_complete_Program02_receipt_tables_invariant_under_arbitrary_global_setting_interleaving_with_each_context_cell_retaining_less_than_one_count_discrepancy_at_its_own_sample_count",
+  "version": 1
+}
