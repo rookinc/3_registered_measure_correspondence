@@ -1,0 +1,157 @@
+{
+  "artifact_id": "registered_measure_bounded_residual_frequency_witness_006",
+  "artifact_sha256": "70471dd8a4935a5ebda34d3a19648a98491333ea79fb6e3f54fb0bfc4e7c1d88",
+  "audit_pass": true,
+  "balanced_split": {
+    "favored_subreceipt_limit": "mu/2 = 1/4+sqrt(5)/20",
+    "mechanism": "toggle parity within each class",
+    "probability_used": false,
+    "unfavored_subreceipt_limit": "(1-mu)/2 = 1/4-sqrt(5)/20"
+  },
+  "boundary": {
+    "Born_rule_assumed": false,
+    "correspondence_mechanism_class_constructed": true,
+    "empirical_frequency_correspondence_closed_natively": false,
+    "joint_setting_context_used_as_causal_remote_input": false,
+    "local_spacelike_outcome_generation_derived": false,
+    "native_Thalean_residual_accumulator_derived": false,
+    "rule_claimed_as_physical_dynamics": false
+  },
+  "checks": {
+    "Audit005_passes": true,
+    "asymptotic_frequency_equals_mu": true,
+    "bounded_discrepancy_strictly_less_than_one": true,
+    "bounded_residual_register_has_infinite_exact_orbit": true,
+    "exact_prefix_count_identity": true,
+    "exact_residual_identity": true,
+    "favored_subreceipt_count_difference_at_most_one": true,
+    "favored_subreceipts_converge_to_mu_over_two": true,
+    "final_frequency_error_below_one_over_N": true,
+    "mu_complement_matches_Audit005_q_unfavored": true,
+    "mu_is_irrational": true,
+    "mu_matches_Audit005_q_favored": true,
+    "mu_not_inserted_as_stochastic_transition_probability": true,
+    "mu_plus_complement_one": true,
+    "native_quadratic_register_closed": true,
+    "receipt_sequence_not_eventually_periodic": true,
+    "residual_stays_bounded_in_unit_interval": true,
+    "rule_has_no_random_input": true,
+    "rule_uses_only_add_compare_close_retain": true,
+    "unfavored_subreceipt_count_difference_at_most_one": true,
+    "unfavored_subreceipts_converge_to_complement_over_two": true
+  },
+  "earned_statement": "Audit005 supplies a native normalized algebraic class measure mu=(5+sqrt(5))/10. Audit006 shows that any such measure can be transduced into exact asymptotic registered frequency by a universal deterministic residual rule: add mu, close one integer receipt when the unit boundary is crossed, and retain the residual. The cumulative favored count is exactly floor(n mu), the residual remains in [0,1), and frequency error is strictly below 1/n. Alternating a parity bit within each class yields the two equal binary subreceipt frequencies mu/2 and (1-mu)/2, exactly the Program-02 algebraic weights. No stochastic transition probability or random input is used. This is a correspondence mechanism witness, not yet proof that the native apparatus implements this residual rule.",
+  "exact_theorem": {
+    "favored_count": "N_fav(n)=floor(n*mu)",
+    "frequency_error": "|N_fav(n)/n-mu|<1/n",
+    "limiting_frequency": "mu",
+    "residual": "r_n=n*mu-floor(n*mu)",
+    "residual_interval": "0<=r_n<1"
+  },
+  "history": {
+    "eventually_periodic": false,
+    "residual_bounded": true,
+    "residual_exact_state_set_finite": false,
+    "rule_finitely_specified": true
+  },
+  "input_measure": {
+    "complement": "(5-sqrt(5))/10",
+    "mu": "(5+sqrt(5))/10",
+    "mu_already_derived_algebraically": true,
+    "mu_inserted_as_fitted_frequency": false,
+    "source": "Audit005 native spectral quadratic register"
+  },
+  "next_gate": "Test whether the existing registered-action apparatus already contains the four primitives required by this witness: additive accumulation, a normalized unit closure boundary, integer receipt emission, and retained bounded residual. If those primitives are native, test exact identification with the Audit005 spectral weight rather than inventing a new frequency law.",
+  "residual_rule": {
+    "closure": "emit 1 and set r=t-1 iff t>=1",
+    "initial_residual": 0,
+    "otherwise": "emit 0 and set r=t",
+    "random_input": false,
+    "stochastic_transition_probability": false,
+    "update": "t=r+mu"
+  },
+  "sample_run": {
+    "absolute_error": 6.797749978915135e-06,
+    "attempt_count": 10000,
+    "favored_count": 7236,
+    "favored_frequency": 0.7236,
+    "favored_split_counts": [
+      3618,
+      3618
+    ],
+    "selected_prefixes": [
+      {
+        "absolute_error": 0.7236067977499789,
+        "fav_count": 0,
+        "fav_frequency": 0.0,
+        "n": 1,
+        "residual": 0.7236067977499789,
+        "unfav_count": 1
+      },
+      {
+        "absolute_error": 0.22360679774997894,
+        "fav_count": 1,
+        "fav_frequency": 0.5,
+        "n": 2,
+        "residual": 0.447213595499958,
+        "unfav_count": 1
+      },
+      {
+        "absolute_error": 0.056940131083312306,
+        "fav_count": 2,
+        "fav_frequency": 0.6666666666666666,
+        "n": 3,
+        "residual": 0.17082039324993692,
+        "unfav_count": 1
+      },
+      {
+        "absolute_error": 0.12360679774997896,
+        "fav_count": 3,
+        "fav_frequency": 0.6,
+        "n": 5,
+        "residual": 0.6180339887498949,
+        "unfav_count": 2
+      },
+      {
+        "absolute_error": 0.02360679774997898,
+        "fav_count": 7,
+        "fav_frequency": 0.7,
+        "n": 10,
+        "residual": 0.2360679774997898,
+        "unfav_count": 3
+      },
+      {
+        "absolute_error": 0.0036067977499789627,
+        "fav_count": 72,
+        "fav_frequency": 0.72,
+        "n": 100,
+        "residual": 0.36067977499789805,
+        "unfav_count": 28
+      },
+      {
+        "absolute_error": 0.0006067977499789601,
+        "fav_count": 723,
+        "fav_frequency": 0.723,
+        "n": 1000,
+        "residual": 0.6067977499789663,
+        "unfav_count": 277
+      },
+      {
+        "absolute_error": 6.797749978915135e-06,
+        "fav_count": 7236,
+        "fav_frequency": 0.7236,
+        "n": 10000,
+        "residual": 0.06797749978977663,
+        "unfav_count": 2764
+      }
+    ],
+    "target_numeric": 0.7236067977499789,
+    "unfavored_count": 2764,
+    "unfavored_split_counts": [
+      1382,
+      1382
+    ]
+  },
+  "verdict": "the_native_algebraic_class_measure_can_be_transduced_by_a_universal_deterministic_bounded_residual_rule_into_a_registered_binary_history_with_exact_prefix_count_floor_nmu_bounded_discrepancy_and_asymptotic_frequency_mu_without_randomness_or_stochastic_transition_probabilities",
+  "version": 1
+}
