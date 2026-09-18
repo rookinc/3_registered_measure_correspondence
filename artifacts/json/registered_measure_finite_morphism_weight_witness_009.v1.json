@@ -1,0 +1,70 @@
+{
+  "artifact_id": "registered_measure_finite_morphism_weight_witness_009",
+  "artifact_sha256": "367334b219d158976b2520da0e2f76c604b83a55b2bdc6c71ea1d673b97d6683",
+  "audit_pass": true,
+  "boundary": {
+    "A_to_1_B_to_10_morphism_native": false,
+    "Born_rule_used": false,
+    "Fibonacci_substitution_native": false,
+    "cycle_doubling_equals_morphism_proved": false,
+    "frequency_correspondence_closed_natively": false,
+    "probability_transition_used": false,
+    "target_informed_witness": true
+  },
+  "checks": {
+    "Audit002_passes": true,
+    "Audit005_passes": true,
+    "Audit005_q_favored_matches": true,
+    "Audit005_q_unfavored_matches": true,
+    "Audit008_passes": true,
+    "explicit_fractional_Qsqrt5_register_not_required": true,
+    "fA_plus_fB_one": true,
+    "finite_morphism": true,
+    "generation30_one_converges": true,
+    "generation30_zero_converges": true,
+    "morphism_uses_only_binary_receipts": true,
+    "native_cycle_doubling_exists_but_not_identified_with_morphism": true,
+    "no_irrational_constant_in_morphism": true,
+    "no_probability_in_morphism": true,
+    "output_measure_normalized": true,
+    "output_one_equals_native_q_favored": true,
+    "output_zero_equals_native_q_unfavored": true,
+    "variable_length_ratio_is_one_to_two": true
+  },
+  "earned_statement": "The Program-02 native class measure admits a purely discrete finite-rule realization with no explicit algebraic residual state. The Fibonacci substitution generates source symbol frequencies fA and fB. Applying the fixed finite morphism A->1, B->10 produces asymptotic binary output frequencies (fA+fB)/(fA+2fB)=(5+sqrt(5))/10 and fB/(fA+2fB)=(5-sqrt(5))/10, exactly the Audit005 native spectral masses. The morphism uses output lengths one and two, which resembles native receipt cycle doubling, but this audit does not identify the external substitution or morphism with native dynamics.",
+  "exact_output_measure": {
+    "matches_Audit005": true,
+    "one": "(5+sqrt(5))/10",
+    "zero": "(5-sqrt(5))/10"
+  },
+  "mechanism_class": {
+    "eventually_periodic": false,
+    "explicit_Q_sqrt5_fractional_state": false,
+    "finite_output_morphism": true,
+    "finite_rule": true,
+    "unbounded_registered_history": true
+  },
+  "next_gate": "Test whether the native receipt tower supplies a two-class transition grammar conjugate to the Fibonacci substitution and a one-versus-two receipt expansion equivalent to the A->1, B->10 morphism. If not, retain this as an external existence witness only.",
+  "receipt_morphism": {
+    "A": "1",
+    "A_length": 1,
+    "B": "10",
+    "B_length": 2,
+    "irrational_constants": false,
+    "probabilities": false
+  },
+  "relation_to_receipt_tower": {
+    "morphism_length_profile": "1:2",
+    "native_cycle_doubling_exists": true,
+    "native_identification_claimed": false
+  },
+  "source_rule": {
+    "integer_only": true,
+    "substitution": {
+      "A": "AB",
+      "B": "A"
+    }
+  },
+  "verdict": "a_finite_integer_substitution_followed_by_the_fixed_binary_morphism_A_to_1_B_to_10_generates_the_exact_native_sqrt5_class_measure_as_asymptotic_registered_frequency_without_probabilities_irrational_state_variables_or_postselection",
+  "version": 1
+}
