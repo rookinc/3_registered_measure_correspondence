@@ -1,0 +1,59 @@
+{
+  "artifact_id": "registered_measure_local_projector_joint_interface_019",
+  "artifact_sha256": "d58d3279e2c573b6750eb7cca8de29b01bd4df1eea567d9be22620b5993e9fbe",
+  "audit_pass": true,
+  "boundary": {
+    "Bell_local_hidden_variable_factorization": false,
+    "algebraic_local_setting_interfaces_closed": true,
+    "common_adjoint_face_binding_still_conditional": true,
+    "empirical_spacelike_device_realization_closed": false,
+    "native_nonperiodic_history_provenance_closed": false,
+    "physical_face_instrument_realization_closed": false,
+    "remote_setting_in_local_operator": false
+  },
+  "checks": {
+    "Alice_local_contraction_vanishes": true,
+    "Alice_marginal_independent_of_y": true,
+    "Alice_projector_depends_only_on_x": true,
+    "Audit018_passes": true,
+    "Bell_local_hidden_variable_architecture_still_excluded": true,
+    "Bob_local_contraction_vanishes": true,
+    "Bob_marginal_independent_of_x": true,
+    "Bob_projector_depends_only_on_y": true,
+    "Program02_binary_weight_formula_matches": true,
+    "Program02_interface_sealed": true,
+    "joint_contraction_is_Gamma": true,
+    "joint_preparation_remains_nonfactorizable": true,
+    "joint_weight_formula_exact": true,
+    "local_marginals_are_half": true,
+    "local_operator_tensor_product_not_probability_factorization": true,
+    "local_projectors_are_complete_binary_spectral_pairs": true,
+    "source_projector_unit_trace": true,
+    "table_level_no_signaling_from_local_completeness": true
+  },
+  "distinction": {
+    "Bell_local_probability_factorization": false,
+    "local_operator_tensor_product": true,
+    "preassigned_counterfactual_local_answers": false
+  },
+  "earned_statement": "The nonfactorizable Program-02 EPR measure admits strictly local setting interfaces at the operator level. Alice uses Pi_a^x=(I+aA_x)/2 and Bob uses Pi_b^y=(I+bB_y)/2; neither operator contains the remote setting. Acting jointly on the canonical source P_odd gives exactly Tr[P_odd(Pi_a^x tensor Pi_b^y)]=(1+ab Gamma_xy)/4, the Program-02 four-cell table. Completeness of the local spectral pairs gives exact half marginals independent of the remote setting. This is local tensor-product instrumentation of a nonfactorizable source, not Bell-local probability factorization.",
+  "joint_interface": {
+    "expanded": "(1+a*b*Gamma_xy)/4",
+    "source": "canonical nonfactorizable P_odd",
+    "weight": "Tr[P_odd(Pi_a^x tensor Pi_b^y)]"
+  },
+  "local_interfaces": {
+    "Alice": "Pi_a^x=(I+a*A_x)/2",
+    "Alice_remote_setting_input": false,
+    "Bob": "Pi_b^y=(I+b*B_y)/2",
+    "Bob_remote_setting_input": false
+  },
+  "marginals": {
+    "Alice": "1/2 independent of y",
+    "Bob": "1/2 independent of x",
+    "no_signaling": true
+  },
+  "next_gate": "Do not search for a Bell-local hidden response model. The remaining operational issue is physical realization of these local spectral interfaces by the Program-01 face apparatus and its still-conditional common-adjoint binding. Separately, native nonperiodic frequency-history provenance remains open.",
+  "verdict": "local_binary_projector_interfaces_depending_only_on_x_for_Alice_and_y_for_Bob_act_on_the_canonical_nonfactorizable_joint_source_to_reproduce_exactly_the_Program02_four_cell_weight_table_and_half_marginals_without_Bell_local_probability_factorization",
+  "version": 1
+}
