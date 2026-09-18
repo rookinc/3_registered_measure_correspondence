@@ -1,0 +1,52 @@
+{
+  "artifact_id": "registered_measure_pair_square_layer_placement_004",
+  "artifact_sha256": "21ec1cbb071d5ecb8394a8a8bea0721b85d1dc6cbc064ac540b4c3b781c5cb67",
+  "audit_pass": true,
+  "boundary": {
+    "Audit003_downstream_weight_identity_retained": true,
+    "Audit003_source_provenance_rejected": true,
+    "frequency_correspondence_closed": false,
+    "native_quadratic_register_derived": false,
+    "outcome_postselection_allowed": false
+  },
+  "checks": {
+    "Audit003_does_not_yet_supply_intrinsic_quadratic_register": true,
+    "Audit003_passes": true,
+    "Audit003_same_class_square_not_source_pure_line_rule": true,
+    "Program02_interface_sealed": true,
+    "cross_pair_deletion_after_outcome_is_forbidden": true,
+    "favored_class_flips_with_Gamma_sign": true,
+    "favored_class_mass_matches_Audit003_q_plus": true,
+    "native_promotion_requires_intrinsic_quadratic_register": true,
+    "opposite_pure_line_is_EPR_source_branch": true,
+    "same_pure_line_is_null_source_branch": true,
+    "unfavored_class_mass_matches_Audit003_q_minus": true
+  },
+  "downstream_weight_layer": {
+    "Audit003_exact_match": true,
+    "Gamma_negative_favored": [
+      "+-",
+      "-+"
+    ],
+    "Gamma_positive_favored": [
+      "++",
+      "--"
+    ],
+    "q_favored": "(1+|Gamma|)/2 = (5+sqrt(5))/10",
+    "q_unfavored": "(1-|Gamma|)/2 = (5-sqrt(5))/10"
+  },
+  "earned_statement": "The Fibonacci pair-square witness cannot represent the Program-02 pure-line source grammar: same pure lines are the null branch, while the EPR herald is opposite-line. The witness instead matches exactly the two downstream correlation-magnitude classes determined by |Gamma|. The larger mass is the correlation-aligned class and the smaller mass is the anti-aligned class; which binary sign relation is aligned flips with the sign of Gamma. Promoting the witness to a native correspondence law therefore requires an intrinsic quadratic register whose complete normalization is A^2+B^2. Deleting cross pairs after outcomes are known would be forbidden postselection.",
+  "next_gate": "Search the already-earned joint operator/registration structure for an intrinsic positive quadratic form or norm whose orthogonal decomposition produces two squared class components with no observational deletion of cross terms.",
+  "postselection_boundary": {
+    "admissible_promotion": "derive A^2+B^2 as a complete intrinsic quadratic register before outcome registration",
+    "cross_terms": "must be absent or cancelled by native algebra, not discarded observationally",
+    "delete_cross_pairs_after_outcome": "forbidden"
+  },
+  "source_layer": {
+    "Audit003_pair_square_interpretation": "rejected",
+    "opposite_pure_line": "h=1 canonical EPR",
+    "same_pure_line": "h=0 null"
+  },
+  "verdict": "the_Audit003_pair_square_witness_is_incompatible_with_the_Program02_source_pure_line_layer_but_matches_exactly_the_downstream_correlation_aligned_and_anti_aligned_class_masses_and_can_be_promoted_only_if_native_registration_supplies_the_quadratic_normalization_without_outcome_postselection",
+  "version": 1
+}
