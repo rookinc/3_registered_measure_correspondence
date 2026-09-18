@@ -1,0 +1,48 @@
+{
+  "artifact_id": "registered_measure_native_provenance_boundary_013",
+  "artifact_sha256": "eec2655bc4b04c7438a1410e04cd68b972ab3afb363ae9ef7852796f69a0e491",
+  "audit_pass": true,
+  "boundary": {
+    "all_interaction_conditioned_selectors_refuted": false,
+    "native_Sturmian_provenance_closed": false,
+    "new_frequency_mechanism_needed": false,
+    "path_sensitive_selector_refuted": false,
+    "row_local_selector_refuted": true,
+    "static_automorphism_provenance_refuted": true
+  },
+  "checks": {
+    "201O_interface_sealed": true,
+    "201O_passes": true,
+    "Audit011_passes": true,
+    "Audit012_passes": true,
+    "all_120_rows_orientation_invariant": true,
+    "exact_infinite_Sturmian_history_closed": true,
+    "interaction_conditioning_not_globally_refuted": true,
+    "no_row_context_orientation_distinction": true,
+    "path_sensitive_selector_remains_open": true,
+    "row_context_selector_rejected": true,
+    "single_fixed_automorphism_rejected": true,
+    "static_native_b_rejected": true
+  },
+  "closed_target": {
+    "history": "exact infinite Sturmian binary registered history",
+    "one_density": "(5+sqrt(5))/10",
+    "zero_density": "(5-sqrt(5))/10",
+    "zero_position_law": "floor(k/alpha)"
+  },
+  "earned_statement": "Program 03 has an exact infinite correspondence history, but two native provenance classes are now excluded. Repeated native b and any single fixed finite automorphism are periodic and cannot generate the irrational-density Sturmian history. Separately, all 120 Audit133 connector rows are orientation invariant, with zero row-context orientation distinctions, so orientation-blind row data cannot select between the two registered history members. Native provenance, if present, must therefore depend on ordered path history, growing registered history, interaction-conditioned composition, or another genuinely non-autonomous mechanism.",
+  "next_gate": "Inspect only native path-sensitive registered-history geometry. The required object is a transition law whose next action depends on retained ordered history, not merely on the current connector row. Do not search for another weighting or frequency construction.",
+  "rejected_provenance_routes": {
+    "orientation_blind_Audit133_row_context_selector": true,
+    "repeated_native_b": true,
+    "single_fixed_finite_automorphism": true
+  },
+  "surviving_native_route": {
+    "growing_registered_history": "open",
+    "interaction_conditioned_composition": "open",
+    "non_autonomous_transition_grammar": "open",
+    "path_sensitive_history": "open"
+  },
+  "verdict": "the_exact_Sturmian_correspondence_history_has_no_provenance_in_either_repeated_static_native_b_or_any_orientation_blind_Audit133_row_context_so_any_remaining_native_provenance_must_be_path_sensitive_history_bearing_or_otherwise_non_autonomous",
+  "version": 1
+}

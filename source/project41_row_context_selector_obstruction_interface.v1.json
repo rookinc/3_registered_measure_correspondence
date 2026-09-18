@@ -1,0 +1,26 @@
+{
+  "schema": "quantum_relativity.project41_row_context_selector_obstruction_interface",
+  "version": 1,
+  "status": "sealed_prior_theorem_interface",
+  "source_artifact": "project41_audit133_row_context_selector_obstruction_201o",
+  "audit_pass": true,
+  "verdict": "Audit133_orientation_blind_row_context_cannot_select_between_the_two_registered_history_members",
+  "measurements": {
+    "connector_row_count": 120,
+    "joint_context_orientation_invariant_count": 120,
+    "joint_context_orientation_distinguish_count": 0
+  },
+  "row_fields_tested": {
+    "factor_can_select": false,
+    "fixed_state_can_select": false,
+    "partner_state_can_select": false,
+    "histories_are_edge_disjoint_can_select": false
+  },
+  "boundary": {
+    "absolute_selector_forbidden": true,
+    "row_context_selector_forbidden": true,
+    "path_sensitive_selector_forbidden": false,
+    "interaction_conditioned_selector_globally_refuted": false,
+    "native_path_geometry_still_open": true
+  }
+}
