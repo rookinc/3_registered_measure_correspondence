@@ -1,0 +1,62 @@
+{
+  "Fibonacci_measure": {
+    "fA": "(sqrt(5)-1)/2",
+    "fB": "(3-sqrt(5))/2",
+    "ratio": "phi"
+  },
+  "Program02_two_class_measure": {
+    "q_minus": "(5-sqrt(5))/10",
+    "q_plus": "(5+sqrt(5))/10",
+    "ratio": "phi^2"
+  },
+  "artifact_id": "registered_measure_joint_pair_square_witness_003",
+  "artifact_sha256": "09813386e0eddae38e9263ebb7721a821d8257e16a6c7c433250591eef7ac76b",
+  "audit_pass": true,
+  "balanced_binary_split": {
+    "w_minus": "q_minus/2 = 1/4-sqrt(5)/20",
+    "w_plus": "q_plus/2 = 1/4+sqrt(5)/20"
+  },
+  "boundary": {
+    "Born_rule_used": false,
+    "Fibonacci_rule_claimed_native": false,
+    "Program02_weights_inserted_into_recurrence": false,
+    "irrational_probability_inserted_into_rule": false,
+    "native_frequency_correspondence_closed": false,
+    "pair_square_operation_claimed_native": false,
+    "same_class_pair_condition_claimed_native": false,
+    "target_informed_witness": true
+  },
+  "checks": {
+    "Audit002_passes": true,
+    "Program02_class_ratio_phi_squared": true,
+    "Program02_class_totals_sum_one": true,
+    "Program02_interface_sealed": true,
+    "balanced_split_recovers_w_minus": true,
+    "balanced_split_recovers_w_plus": true,
+    "fA_over_fB_equals_phi": true,
+    "fA_plus_fB_one": true,
+    "generation30_pair_minus_converges": true,
+    "generation30_pair_plus_converges": true,
+    "pair_A_equals_q_plus": true,
+    "pair_B_equals_q_minus": true,
+    "pair_ratio_equals_phi_squared": true
+  },
+  "earned_statement": "The Program-02 nontrivial binary weights admit an exact finite-rule correspondence witness. The Fibonacci integer substitution generates limiting frequencies fA and fB with ratio phi. Forming same-class pair counts gives limiting masses proportional to fA^2 and fB^2, whose normalized ratio is phi^2. These normalized pair masses are exactly (5+sqrt(5))/10 and (5-sqrt(5))/10. Splitting each class equally across its two symmetry-related binary receipts gives the exact Program-02 weights 1/4 +/- sqrt(5)/20. No irrational constant or probability is inserted into the finite recurrence. This is a target-informed construction witness, not yet native provenance.",
+  "finite_generation_witness": {
+    "AA_count": 1812440220361,
+    "AA_normalized": 0.7236067977501387,
+    "BB_count": 692290561600,
+    "BB_normalized": 0.27639320224986136,
+    "generation": 30,
+    "q_minus_error": 1.596500709410975e-13,
+    "q_plus_error": 1.5976109324356003e-13
+  },
+  "next_gate": "Determine whether a native joint registered process supplies the pair-product and balanced-split operations used by this witness. If not, reject the witness as non-native rather than promoting it to a correspondence law.",
+  "pair_square_identity": {
+    "exact": true,
+    "q_minus": "fB^2/(fA^2+fB^2)",
+    "q_plus": "fA^2/(fA^2+fB^2)"
+  },
+  "verdict": "the_Program02_nontrivial_binary_weights_are_exactly_the_balanced_split_of_the_normalized_same_class_pair_square_measure_generated_from_the_Fibonacci_finite_rule_limiting_frequencies",
+  "version": 1
+}
