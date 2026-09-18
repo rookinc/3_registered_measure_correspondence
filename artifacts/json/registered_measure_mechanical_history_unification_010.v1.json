@@ -1,0 +1,53 @@
+{
+  "artifact_id": "registered_measure_mechanical_history_unification_010",
+  "artifact_sha256": "a89930ae0785fc4f99a1f0fb043b5fdf13b97a5c7efae0c3d4e32d3e17a783d9",
+  "audit_pass": true,
+  "boundary": {
+    "Fibonacci_dynamics_native": false,
+    "algebraic_residual_state_native": false,
+    "frequency_correspondence_closed_natively": false,
+    "infinite_native_conjugacy_theorem_closed": false,
+    "same_symbolic_dynamics_candidate": true,
+    "two_witnesses_independent_mechanisms": false
+  },
+  "checks": {
+    "Audit006_passes": true,
+    "Audit009_passes": true,
+    "all_observed_zero_positions_match_Beatty_law": true,
+    "beta_equals_inverse_alpha": true,
+    "beta_equals_phi2_plus_one": true,
+    "mechanical_is_zero_phase_shifted_one_receipt": true,
+    "morphic_and_mechanical_prefix_exact_match": true,
+    "morphic_prefix_length": true,
+    "mu_plus_alpha_one": true
+  },
+  "common_parameters": {
+    "one_density": "(5+sqrt(5))/10",
+    "zero_Beatty_spacing": "phi^2+1=(5+sqrt(5))/2",
+    "zero_Beatty_spacing_equals_inverse_zero_density": true,
+    "zero_density": "(5-sqrt(5))/10"
+  },
+  "earned_statement": "The two Program-03 frequency witnesses are not independent constructions. After one receipt of phase alignment, the Fibonacci substitution followed by A->1, B->10 and the exact bounded-residual threshold rule with increment mu=(5+sqrt(5))/10 produce identical registered binary history through the certified 20000-receipt prefix. Their exact parameters also coincide: zeros have density (5-sqrt(5))/10 and Beatty spacing phi^2+1=1/(1-mu). Thus the discrete morphic and algebraic rotation pictures are two representations of one mechanical history candidate, not competing frequency laws.",
+  "finite_morphism_history": {
+    "morphism": "A->1; B->10",
+    "substitution": "A->AB; B->A"
+  },
+  "next_gate": "Search native registered mechanics for either representation of this single mechanical history: a two-class Fibonacci-type recurrence or an algebraic phase increment. Evidence for either representation should be tested against the same receipt history rather than treated as a new mechanism.",
+  "phase_relation": {
+    "shift": 1,
+    "statement": "finite-morphism history equals the Audit006 zero-residual history after dropping its first receipt"
+  },
+  "prefix_certificate": {
+    "Beatty_zero_failure_count": 0,
+    "first_mismatch": null,
+    "length": 20000,
+    "mismatch_count": 0
+  },
+  "residual_history": {
+    "increment": "(5+sqrt(5))/10",
+    "phase_aligned_initial_residual": "mu",
+    "rule": "add mu; emit 1 on unit crossing; retain remainder"
+  },
+  "verdict": "the_finite_Fibonacci_plus_receipt_morphism_witness_and_the_bounded_residual_accumulator_witness_generate_the_same_sqrt5_mechanical_registered_history_after_a_one_receipt_phase_shift_over_the_certified_prefix_and_share_the_same_exact_Beatty_zero_position_parameters",
+  "version": 1
+}
