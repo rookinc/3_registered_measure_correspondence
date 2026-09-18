@@ -1,0 +1,67 @@
+{
+  "artifact_id": "registered_measure_finite_rule_irrational_frequency_witness_002",
+  "artifact_sha256": "08b3b7270170c8199256a868b96efbd162b06972a27a9e83d10cf35ebaa8f02f",
+  "audit_pass": true,
+  "boundary": {
+    "Fibonacci_rule_claimed_native_to_Thalean_apparatus": false,
+    "constructs_Program02_weights": false,
+    "derives_EPR_frequency_correspondence": false,
+    "proves_mechanism_class_exists": true,
+    "uses_Born_rule": false,
+    "uses_target_probability_as_transition_input": false
+  },
+  "checks": {
+    "A_limiting_frequency_irrational": true,
+    "Audit001_passes": true,
+    "B_limiting_frequency_irrational": true,
+    "Program02_interface_sealed": true,
+    "finite_alphabet_size_two": true,
+    "finite_rule_with_unbounded_registered_history": true,
+    "generation30_A_close_to_exact_limit": true,
+    "generation30_B_close_to_exact_limit": true,
+    "history_length_grows": true,
+    "irrational_frequency_generated_without_probability_input": true,
+    "limiting_frequencies_sum_to_one": true,
+    "no_irrational_constant_in_rule": true,
+    "no_probability_weight_in_rule": true,
+    "phi_satisfies_x2_minus_x_minus_1": true,
+    "registered_history_not_fixed_finite_state_census": true,
+    "substitution_rule_integer_only": true
+  },
+  "earned_statement": "Audit 001 rules out exact irrational frequency from static finite equal-count models and deterministic dynamics on a fixed finite state space. Audit 002 exhibits the minimal structural escape: a finite deterministic integer rule on a finite alphabet whose registered history grows without bound. The substitution A->AB, B->A has no probabilities or irrational constants in its rule, yet its integer substitution matrix has Perron root phi and generates exact irrational asymptotic symbol frequencies (sqrt(5)-1)/2 and (3-sqrt(5))/2. Thus finite rule does not imply rational asymptotic measure when the registered history itself grows.",
+  "next_gate": "Test whether the exact Program-02 weights can be generated from a minimal composite of this finite-rule sqrt(5) measure and an independently balanced binary receipt, while marking that construction as a target-informed witness rather than native provenance.",
+  "registered_history": {
+    "alphabet_finite": true,
+    "generation_30_total": 2178309,
+    "global_state_space_fixed_finite": false,
+    "history_growth": "unbounded",
+    "rule_finite": true
+  },
+  "rule": {
+    "A": "AB",
+    "B": "A",
+    "alphabet_size": 2,
+    "irrational_constants_in_rule": false,
+    "probabilities_in_rule": false,
+    "substitution_matrix": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "spectral_structure": {
+    "A_frequency": "(sqrt(5)-1)/2",
+    "A_frequency_numeric": 0.6180339887498949,
+    "B_frequency": "(3-sqrt(5))/2",
+    "B_frequency_numeric": 0.3819660112501051,
+    "Perron_root": "(1+sqrt(5))/2",
+    "characteristic_polynomial": "lambda^2-lambda-1"
+  },
+  "verdict": "a_finite_integer_substitution_rule_on_a_two_symbol_alphabet_with_unbounded_registered_history_generates_exact_irrational_asymptotic_symbol_frequencies_without_probability_weights_or_irrational_constants_in_the_rule",
+  "version": 1
+}
