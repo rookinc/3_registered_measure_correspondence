@@ -1,0 +1,71 @@
+{
+  "Audit003_relation": {
+    "Fibonacci_needed_to_derive_native_masses": false,
+    "Fibonacci_pair_square_matches_native_spectral_masses": true,
+    "interpretation": "external finite-rule witness mirrors the already-native spectral quadratic decomposition"
+  },
+  "artifact_id": "registered_measure_native_spectral_quadratic_register_005",
+  "artifact_sha256": "d268658be3cef77843cb24f831efca201695430a1f8dbd9dcb4537579afad36d",
+  "audit_pass": true,
+  "boundary": {
+    "Born_frequency_postulate_used": false,
+    "Fibonacci_rule_promoted_to_native": false,
+    "empirical_frequency_correspondence_closed": false,
+    "native_quadratic_register_closed_at_operator_level": true,
+    "operator_weight_equals_empirical_frequency_derived": false,
+    "outcome_postselection_used": false
+  },
+  "checks": {
+    "Audit003_passes": true,
+    "Audit004_native_quadratic_requirement_met_at_operator_level": true,
+    "Audit004_passes": true,
+    "Program02_interface_sealed": true,
+    "Qminus_idempotent_from_O2_equals_I": true,
+    "Qplus_idempotent_from_O2_equals_I": true,
+    "binary_joint_observable_is_reflection": true,
+    "canonical_source_projector_has_unit_trace": true,
+    "favored_projector_is_sign_covariant": true,
+    "favored_unfavored_register_complete": true,
+    "favored_unfavored_register_orthogonal": true,
+    "native_spectral_mass_matches_Audit003_minus": true,
+    "native_spectral_mass_matches_Audit003_plus": true,
+    "no_cross_outcome_deletion_required": true,
+    "projector_trace_weight_equals_squared_norm": true,
+    "q_fav_plus_q_unfav_one": true,
+    "quadratic_components_are_orthogonal": true,
+    "rank_one_projector_gives_vector_state_form": true,
+    "spectral_projectors_complete": true,
+    "spectral_projectors_orthogonal": true,
+    "spectral_weight_identity": true
+  },
+  "correlation_oriented_register": {
+    "Q_favored": "(I+sgn(Gamma)O)/2",
+    "Q_unfavored": "(I-sgn(Gamma)O)/2",
+    "q_favored": "(1+|Gamma|)/2",
+    "q_unfavored": "(1-|Gamma|)/2"
+  },
+  "earned_statement": "The intrinsic quadratic register demanded by Audit004 is already present in the Program-02 joint operator algebra. For every binary setting pair O=A tensor B is a reflection, so Q+ and Q- are a complete orthogonal pair of spectral projectors. Orienting them by sign(Gamma) gives the correlation-aligned and anti-aligned classes. Their canonical source weights are Tr(P_odd Q)=(1+/-|Gamma|)/2. With |Gamma|=1/sqrt(5) these are exactly (5+sqrt(5))/10 and (5-sqrt(5))/10. Since P_odd is rank one, each trace is exactly a squared component norm ||Q psi||^2. No cross events are deleted and no postselection is required. The Fibonacci pair-square witness therefore mirrors an already-native spectral quadratic structure rather than supplying its provenance.",
+  "joint_register": {
+    "Q_minus": "(I-O)/2",
+    "Q_plus": "(I+O)/2",
+    "complete": true,
+    "observable": "O=A tensor B",
+    "orthogonal": true,
+    "reflection": "O^2=I"
+  },
+  "native_masses": {
+    "Gamma_magnitude": "1/sqrt(5)",
+    "q_favored": "(5+sqrt(5))/10",
+    "q_unfavored": "(5-sqrt(5))/10"
+  },
+  "next_gate": "Return to the actual Program-03 question: determine how the native spectral quadratic weights become long-run registered frequencies. The quadratic measure itself no longer requires a Fibonacci provenance hypothesis.",
+  "quadratic_form": {
+    "cross_term": 0,
+    "decomposition": "psi=Q_favored psi + Q_unfavored psi",
+    "post_outcome_deletion": false,
+    "source": "P_odd=|psi><psi|",
+    "weight_identity": "Tr(P_odd Q)=||Q psi||^2"
+  },
+  "verdict": "the_existing_Program02_binary_joint_observable_and_canonical_exchange_odd_projector_supply_a_complete_intrinsic_orthogonal_quadratic_register_whose_two_squared_component_norms_are_exactly_the_Audit003_correlation_aligned_and_anti_aligned_sqrt5_masses",
+  "version": 1
+}
