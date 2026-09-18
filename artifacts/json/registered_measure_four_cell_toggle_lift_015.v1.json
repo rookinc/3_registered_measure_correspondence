@@ -1,0 +1,117 @@
+{
+  "artifact_id": "registered_measure_four_cell_toggle_lift_015",
+  "artifact_sha256": "d22ba4114714db25606353187d3926e12127ec8c69696cb6a9684a62a89e44eb",
+  "audit_pass": true,
+  "boundary": {
+    "local_spacelike_output_generation_closed": false,
+    "native_Sturmian_provenance_closed": false,
+    "preassigned_local_answer_table": false,
+    "setting_schedule_multiplexing_closed": false,
+    "single_context_full_table_closed": true,
+    "source_setting_dependence": false
+  },
+  "checks": {
+    "Audit005_passes": true,
+    "Audit006_passes": true,
+    "Program02_interface_sealed": true,
+    "all_cell_count_discrepancies_below_one": true,
+    "all_class_count_discrepancies_below_one": true,
+    "cell_count_discrepancy_strictly_below_one_theorem": true,
+    "cell_frequency_discrepancy_strictly_below_one_over_n_theorem": true,
+    "distinct_class_mass_matches_Audit005": true,
+    "negative_Gamma_opposite_sign_cells_are_large": true,
+    "not_preassigned_four_local_answers": true,
+    "positive_Gamma_same_sign_cells_are_large": true,
+    "registration_occurs_after_context_is_selected": true,
+    "same_axis_negative_has_only_opposite_sign_cells": true,
+    "source_measure_not_changed_by_registration": true,
+    "toggle_subclass_discrepancy_at_most_half": true
+  },
+  "construction": {
+    "class_process": "bounded-discrepancy correlation-class history",
+    "probability_transition": false,
+    "randomness": false,
+    "within_class_refinement": "independent deterministic two-toggle"
+  },
+  "earned_statement": "For every fixed native analyzer context, the exact correlation-class history can be refined to the complete four-cell Program-02 receipt table without randomness. Alternate the two symmetry-related binary receipts inside each correlation class. If the class count differs from its algebraic target by less than one, each resulting cell count differs from its target n*w_ab by less than one, so each cell frequency differs from w_ab by less than 1/n. This closes single-context full-table registration. The procedure registers an already-derived joint context measure; it does not assign setting-independent counterfactual local answers.",
+  "exact_theorem": {
+    "cell_count": "|N_ab(n)-n w_ab|<1",
+    "cell_frequency": "|N_ab(n)/n-w_ab|<1/n",
+    "class_count": "|M(n)-n q|<1",
+    "within_class_toggle": "|C(n)-M(n)/2|<=1/2"
+  },
+  "native_cases": {
+    "distinct_negative": {
+      "Gamma_numeric": -0.447213595499958,
+      "favored_labels": [
+        "+-",
+        "-+"
+      ],
+      "sample_counts": {
+        "++": 2764,
+        "+-": 7236,
+        "-+": 7236,
+        "--": 2764
+      },
+      "targets_numeric": {
+        "++": 0.1381966011250105,
+        "+-": 0.36180339887498947,
+        "-+": 0.36180339887498947,
+        "--": 0.1381966011250105
+      },
+      "unfavored_labels": [
+        "++",
+        "--"
+      ]
+    },
+    "distinct_positive": {
+      "Gamma_numeric": 0.447213595499958,
+      "favored_labels": [
+        "++",
+        "--"
+      ],
+      "sample_counts": {
+        "++": 7236,
+        "+-": 2764,
+        "-+": 2764,
+        "--": 7236
+      },
+      "targets_numeric": {
+        "++": 0.36180339887498947,
+        "+-": 0.1381966011250105,
+        "-+": 0.1381966011250105,
+        "--": 0.36180339887498947
+      },
+      "unfavored_labels": [
+        "+-",
+        "-+"
+      ]
+    },
+    "same_axis_negative": {
+      "Gamma_numeric": -1.0,
+      "favored_labels": [
+        "+-",
+        "-+"
+      ],
+      "sample_counts": {
+        "++": 0,
+        "+-": 10000,
+        "-+": 10000,
+        "--": 0
+      },
+      "targets_numeric": {
+        "++": 0.0,
+        "+-": 0.5,
+        "-+": 0.5,
+        "--": 0.0
+      },
+      "unfavored_labels": [
+        "++",
+        "--"
+      ]
+    }
+  },
+  "next_gate": "Construct schedule-robust multiplexing across the four Bell setting contexts. Each context must retain its own registration state and advance only when that context is sampled, while the source herald and algebraic measure remain independent of the later setting schedule.",
+  "verdict": "the_exact_single_context_correlation_class_history_plus_two_deterministic_within_class_toggles_realizes_the_complete_four_cell_Program02_binary_receipt_table_with_each_cell_having_strictly_less_than_one_count_discrepancy_and_one_over_n_frequency_discrepancy",
+  "version": 1
+}
