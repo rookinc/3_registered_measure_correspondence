@@ -1,0 +1,53 @@
+{
+  "artifact_id": "registered_measure_joint_registration_causal_boundary_017",
+  "artifact_sha256": "cdd5515da1493a9145cd667640dbc2cef202b3f37b0f7241bc69e8abc4bd6993",
+  "audit_pass": true,
+  "boundary": {
+    "Bell_local_hidden_answer_interpretation_excluded": true,
+    "contextual_frequency_multiplexing_closed": true,
+    "event_ready_herald_ordering_closed": true,
+    "local_causal_output_realization_closed": false,
+    "native_nonperiodic_history_provenance_closed": false,
+    "outcome_postselection_excluded": true
+  },
+  "causal_boundary": {
+    "Alice_output_generated_from_x_alone": "open",
+    "Bob_output_generated_from_y_alone": "open",
+    "measurement_independence_as_physical_law": "not derived here",
+    "spacelike_local_outcome_generation": "open",
+    "statistical_no_signaling": "closed at algebraic/registration level"
+  },
+  "checks": {
+    "Alice_local_output_generation_not_proved": true,
+    "Audit016_passes": true,
+    "Bob_local_output_generation_not_proved": true,
+    "herald_interface_sealed": true,
+    "herald_precedes_settings": true,
+    "joint_context_registrar_explicit": true,
+    "measurement_independence_not_derived_as_physical_law": true,
+    "no_preassigned_local_answer_table": true,
+    "no_retrospective_outcome_postselection": true,
+    "null_branch_retained": true,
+    "outcomes_do_not_define_herald": true,
+    "settings_do_not_define_herald": true,
+    "source_weight_not_schedule_dependent": true,
+    "spacelike_local_generation_not_proved": true
+  },
+  "earned_statement": "The Program-02 antisymmetric EPR branch is event-ready: its herald is determined before analyzer settings and independently of later measurement outcomes, while complementary preparation branches remain in the apparatus ledger. Program-03 contextual multiplexing realizes the already-derived joint receipt tables under arbitrary setting interleaving and is not a hidden table of counterfactual A0,A1,B0,B1 values. However, a joint context registrar is not by itself a proof that Alice's individual outcome is generated from x alone and Bob's from y alone. No-signaling statistics and local causal outcome generation remain logically distinct.",
+  "event_ready_source": {
+    "herald_outcome_independent": true,
+    "herald_setting_independent": true,
+    "null_branch_retained": true,
+    "order": "source attempt -> h -> settings -> outcomes",
+    "retrospective_postselection": false
+  },
+  "next_gate": "Return to native relational mechanics only after preserving this boundary. Two deep interfaces remain: native nonperiodic history provenance and an operational realization of the joint receipt compatible with the local Alice/Bob apparatus without reintroducing Bell-local factorization.",
+  "registration_architecture": {
+    "context_schedule_robustness": true,
+    "preassigned_counterfactual_local_answers": false,
+    "source_weight_changed_by_setting_schedule": false,
+    "type": "joint contextual registration"
+  },
+  "verdict": "the_event_ready_antisymmetric_source_herald_is_fixed_before_settings_and_not_outcome_postselected_and_the_contextual_multiplexing_theorem_is_a_joint_registration_law_not_a_preassigned_local_answer_model_while_spacelike_local_generation_of_individual_Alice_and_Bob_receipts_remains_an_explicit_open_operational_interface",
+  "version": 1
+}

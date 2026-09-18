@@ -1,0 +1,21 @@
+{
+  "schema": "quantum_relativity.program02_event_ready_herald_interface",
+  "version": 1,
+  "status": "sealed_prior_theorem_interface",
+  "source_program": "2_epr_joint_chiral_transduction",
+  "receipt": "h",
+  "branches": {
+    "0": "null preparation",
+    "1": "canonical antisymmetric EPR preparation"
+  },
+  "ordering": {
+    "herald_defined_before_analyzer_settings": true,
+    "analyzer_settings_used_to_define_herald": false,
+    "measurement_outcomes_used_to_define_herald": false
+  },
+  "ledger": {
+    "null_branch_retained": true,
+    "complementary_preparation_branches_retained": true,
+    "retrospective_outcome_postselection": false
+  }
+}
