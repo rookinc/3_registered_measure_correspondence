@@ -1,0 +1,55 @@
+{
+  "Audit006_required_primitives": {
+    "additive_accumulation": {
+      "native_interface": "tau(n gamma_r1)=n",
+      "status": "native"
+    },
+    "closure_boundary": {
+      "native_interface": "visible registration closes after two exchanges while full exchange closure requires four",
+      "status": "native"
+    },
+    "retained_residual": {
+      "native_interface": "r1=D_a(g^2)",
+      "status": "native"
+    },
+    "thresholded_integer_receipt_emission": {
+      "required_rule": "add algebraic measure; emit one integer receipt at normalized unit crossing; retain fractional residual",
+      "status": "open"
+    }
+  },
+  "artifact_id": "registered_measure_native_accumulator_provenance_007",
+  "artifact_sha256": "0d18c009ff6b71484e200d9eb97c077c445a8a30503646168481c0cbc5d04807",
+  "audit_pass": true,
+  "boundary": {
+    "Audit006_promoted_to_native_law": false,
+    "additive_history_native": true,
+    "frequency_correspondence_closed": false,
+    "registration_closure_native": true,
+    "retained_residual_history_native": true,
+    "threshold_measure_rule_native": false
+  },
+  "checks": {
+    "Audit006_passes": true,
+    "additive_integer_history_native": true,
+    "bounded_fractional_residual_correctly_left_open": true,
+    "history_interface_sealed": true,
+    "registration_closure_boundary_native": true,
+    "retained_registered_residual_native": true,
+    "threshold_rule_correctly_left_open": true
+  },
+  "earned_statement": "The bounded-residual frequency witness is not an arbitrary foreign grammar. Three of its four structural primitives are already present in the registered-history theory: additive integer winding tau, a registration closure boundary, and a retained nontrivial residual r1 after visible closure. What is not yet established is the specific measure-transduction law that accumulates an algebraic weight against a normalized unit boundary, emits one integer receipt at crossing, and retains the fractional remainder. Program 03 therefore has one precise native provenance gate rather than a general frequency mystery.",
+  "native_primitive_count": 3,
+  "next_gate": "Search only for a native normalized threshold operation in the existing receipt/cycle machinery. Do not search for new weighting laws or alternative irrational generators.",
+  "remaining_native_gate": {
+    "must_supply": [
+      "normalized unit boundary",
+      "measure accumulation below boundary",
+      "one integer receipt at crossing",
+      "fractional residual retained after crossing"
+    ],
+    "name": "normalized_thresholded_measure_receipt"
+  },
+  "required_primitive_count": 4,
+  "verdict": "three_of_four_bounded_residual_frequency_primitives_are_already_native_to_registered_history_mechanics_and_the_only_missing_operation_is_normalized_thresholded_measure_receipt_emission_with_bounded_fractional_residual",
+  "version": 1
+}

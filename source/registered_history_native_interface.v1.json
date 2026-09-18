@@ -1,0 +1,35 @@
+{
+  "schema": "quantum_relativity.registered_history_native_interface",
+  "version": 1,
+  "status": "sealed_prior_theorem_interface",
+  "source_program": "41-order-4-dodecahedral-residue",
+  "results": {
+    "primitive_history_cycle": {
+      "id": "r1",
+      "statement": "r1 is the unique G30-visible registered-history residual cycle"
+    },
+    "additive_time_coordinate": {
+      "statement": "tau is primitive oriented winding on r1",
+      "normalization": "tau(gamma_r1)=1",
+      "integer_extension": "tau(n gamma_r1)=n"
+    },
+    "visible_closure": {
+      "statement": "visible registration closes after two exchanges"
+    },
+    "finer_history_retention": {
+      "statement": "registered-history surface remains displaced after visible closure"
+    },
+    "full_exchange_closure": {
+      "statement": "full exchange closure requires four exchanges"
+    },
+    "residual_descent": {
+      "statement": "D_a(g^2)=r1"
+    }
+  },
+  "boundary": {
+    "physical_seconds_identified": false,
+    "probability_law_identified": false,
+    "thresholded_measure_receipt_rule_identified": false,
+    "bounded_fractional_residual_accumulator_identified": false
+  }
+}
