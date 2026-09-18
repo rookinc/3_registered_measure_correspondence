@@ -1,0 +1,57 @@
+{
+  "Audit011_target": {
+    "eventually_periodic": false,
+    "history_type": "Sturmian",
+    "zero_density": "(5-sqrt(5))/10",
+    "zero_position_law": "floor(k/alpha)"
+  },
+  "artifact_id": "registered_measure_static_binary_history_no_go_012",
+  "artifact_sha256": "3825e3841406c1e2d852e5af55943428ddea78d05a3d24e2838d86dcccecf50c",
+  "audit_pass": true,
+  "boundary": {
+    "native_Sturmian_provenance_closed": false,
+    "rules_out_all_native_history_mechanics": false,
+    "rules_out_growing_history": false,
+    "rules_out_interaction_conditioning": false,
+    "rules_out_static_b_as_provenance": true
+  },
+  "checks": {
+    "Audit011_history_not_period_two": true,
+    "Audit011_passes": true,
+    "Sturmian_zero_density_irrational": true,
+    "native_b_exchanges_members": true,
+    "native_b_has_order_two": true,
+    "native_history_interface_sealed": true,
+    "periodic_history_cannot_have_irrational_symbol_density": true,
+    "repeated_b_eventually_periodic": true,
+    "repeated_b_member_frequency_rational": true,
+    "repeated_b_not_Sturmian_provenance": true,
+    "repeated_b_period_two": true,
+    "single_finite_automorphism_has_finite_orbits": true,
+    "single_fixed_automorphism_cannot_generate_Sturmian_history": true,
+    "two_history_members_per_fiber": true,
+    "visible_projection_fixed": true
+  },
+  "earned_statement": "The already-native Project-41 registered-history involution b cannot be the provenance of the Program-03 Sturmian frequency history. Each native history fiber has exactly two members and b exchanges them with order two, so repeated b produces a period-two word with rational one-half member frequencies. More generally, repeated application of any single fixed automorphism on a finite carrier yields finite periodic orbits. The exact Audit011 history is nonperiodic and has irrational zero density. Native provenance therefore requires a non-autonomous, interaction-conditioned, or growing-history composition law rather than a single static automorphism.",
+  "native_history_action": {
+    "action": "(y,r0)<->(y,r1)",
+    "action_order": 2,
+    "fiber_size": 2,
+    "limiting_member_frequency": "1/2 each",
+    "repeated_orbit": "period two"
+  },
+  "next_gate": "Inspect only the already-existing interaction-conditioned registered-history machinery for a composition or recurrence law. Do not continue searching static automorphism orbits and do not invent another frequency mechanism.",
+  "no_go": {
+    "any_single_fixed_finite_automorphism": true,
+    "reason": "finite-order repetition is periodic and has rational symbol frequencies",
+    "repeated_native_b": true
+  },
+  "still_open": {
+    "growing_registered_history": true,
+    "interaction_conditioned_automorphism_sequence": true,
+    "native_substitution_or_recurrence": true,
+    "non_autonomous_native_history": true
+  },
+  "verdict": "the_existing_native_b_registered_history_action_is_an_order_two_binary_exchange_and_repeated_application_is_period_two_so_it_cannot_generate_the_exact_nonperiodic_irrational_density_Sturmian_history_required_by_Audit011",
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "quantum_relativity.project41_binary_history_action_interface",
+  "version": 1,
+  "status": "sealed_prior_theorem_interface",
+  "sources": {
+    "registered_history_crosswalk": "project41_wxyzti_registered_history_crosswalk_201e",
+    "native_b1800_crosswalk": "project41_native_b1800_history_action_crosswalk_201r"
+  },
+  "registered_history_fiber": {
+    "fiber_count": 120,
+    "history_members_per_fiber": 2,
+    "members_distinct": true,
+    "members_edge_disjoint": true,
+    "visible_projection_fixed_under_b": true
+  },
+  "native_b_action": {
+    "order": 2,
+    "action": "exchange the two retained five-edge history members in both directions",
+    "state_receipt_form": "(y,r)->(y,r'), r'!=r",
+    "native_graph_automorphism_proved": true
+  },
+  "boundary": {
+    "repeated_b_action_is_period_two": true,
+    "interaction_conditioned_multi_action_history_not_classified": true,
+    "growing_history_composition_not_classified": true,
+    "Sturmian_provenance_not_claimed": true
+  }
+}
