@@ -1,0 +1,50 @@
+{
+  "schema": "quantum_relativity.project41_path_history_recurrence_interface",
+  "version": 1,
+  "status": "sealed_prior_theorem_interface",
+  "sources": {
+    "continuation": "project41_relative_registered_continuation_law_201h867d",
+    "selector_boundary": "project41_registered_continuation_selector_underdetermination_201h869b",
+    "groupoid": "project41_registered_history_transformation_groupoid_201h874a",
+    "recurrence": "project41_presentation_derived_124_history_recurrence_201h877a",
+    "phase_tick": "project41_history_c4_phase_tick_crosswalk_201h880a"
+  },
+  "continuation": {
+    "history_alphabet": [2, 3],
+    "branches": ["preserve_roles", "swap_roles"],
+    "preserve_roles": "h_next=5-h",
+    "swap_roles": "h_next=h",
+    "branches_reconverge": true,
+    "native_branch_selector_derived": false
+  },
+  "selector": {
+    "deterministic_selector_derived": false,
+    "deterministic_selector_refuted": false
+  },
+  "groupoid": {
+    "object_count": 4,
+    "transitive": true,
+    "selected_exchange_is_four_cycle": true,
+    "local_selector_derived": false
+  },
+  "recurrence": {
+    "kernel_depth": 1,
+    "history_action_period": 2,
+    "history_word_generator_period": 2,
+    "registered_surface_period": 4,
+    "history_word_formula": "w_k=r^(2*(k mod 2)) s z",
+    "empirical_pattern_only": false
+  },
+  "phase": {
+    "history_rotation_order": 4,
+    "history_half_turn_order": 2,
+    "phase_lift": "Theta(n gamma_r1)=pi n",
+    "full_exchange_return_period": 4
+  },
+  "boundary": {
+    "path_sensitive_geometry_native": true,
+    "nonperiodic_branch_selector_native": false,
+    "Sturmian_history_native": false,
+    "physical_frequency_claim": false
+  }
+}

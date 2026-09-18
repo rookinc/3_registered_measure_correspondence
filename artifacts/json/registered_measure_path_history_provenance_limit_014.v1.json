@@ -1,0 +1,66 @@
+{
+  "Audit011_target": {
+    "native_match": false,
+    "type": "nonperiodic Sturmian",
+    "zero_position_law": "floor(k/alpha)"
+  },
+  "artifact_id": "registered_measure_path_history_provenance_limit_014",
+  "artifact_sha256": "f20b0780d7c0f1ec0dc03f7331b82f01a7d86e967c4debbbbcb3bc3143c71d17",
+  "audit_pass": true,
+  "boundary": {
+    "branch_sequence_may_be_inserted_by_hand": false,
+    "current_Project41_intrinsic_recurrence_sufficient": false,
+    "frequency_correspondence_constructively_possible": true,
+    "frequency_correspondence_native": false,
+    "native_Sturmian_provenance_closed": false,
+    "path_sensitive_geometry_native": true
+  },
+  "checks": {
+    "Audit011_passes": true,
+    "Audit011_target_nonperiodic": true,
+    "Audit013_passes": true,
+    "arbitrary_branch_word_could_encode_target_but_is_not_provenance": true,
+    "binary_continuation_exists": true,
+    "branches_reconverge": true,
+    "deterministic_selector_not_derived": true,
+    "deterministic_selector_not_refuted": true,
+    "finite_periodic_recurrence_not_Sturmian": true,
+    "full_return_period_four": true,
+    "groupoid_has_four_objects": true,
+    "history_action_period_two": true,
+    "history_word_period_two": true,
+    "native_branch_selector_not_derived": true,
+    "path_interface_sealed": true,
+    "phase_rotation_order_four": true,
+    "preserve_branch_flips_history_class": true,
+    "registered_surface_period_four": true,
+    "swap_branch_preserves_history_class": true
+  },
+  "earned_statement": "Project 41 does contain the path-sensitive structure required after the static and row-local no-go results. At each registered continuation junction there are two admissible history-sensitive branches: preserve roles flips the history class and swap roles preserves it. These arrows assemble into an exact four-object transformation groupoid. However, no native branch selector is derived. The independently derived presentation recurrence remains finite: kernel depth one, history action and word period two, and registered surface period four, with a C4 phase tick. Therefore the existing native path machinery does not generate the exact nonperiodic Sturmian history of Audit011. Choosing the preserve/swap sequence to equal the target word would merely insert the desired frequency history.",
+  "native_intrinsic_recurrence": {
+    "history_action": 2,
+    "history_word_generator": 2,
+    "kernel": 1,
+    "phase_rotation_order": 4,
+    "registered_surface": 4,
+    "type": "finite periodic"
+  },
+  "native_path_grammar": {
+    "groupoid_objects": 4,
+    "history_alphabet": [
+      2,
+      3
+    ],
+    "preserve_roles": "h_next=5-h",
+    "status": "native",
+    "swap_roles": "h_next=h"
+  },
+  "next_gate": "Stop internal frequency construction. The remaining theorem gap is a native nonperiodic selector or growing-history law beyond the currently derived finite D8xC2/C4 recurrence. Absent such new native structure, retain the exact Sturmian correspondence as a constructive external realization and leave empirical-frequency provenance open.",
+  "selector_status": {
+    "deterministic_selector_derived": false,
+    "deterministic_selector_refuted": false,
+    "native_branch_selector": "open"
+  },
+  "verdict": "Project41_supplies_a_genuine_path_sensitive_binary_registered_continuation_groupoid_but_its_derived_internal_recurrence_is_finite_with_history_period2_and_surface_period4_and_no_native_branch_selector_is_derived_so_it_does_not_supply_native_provenance_for_the_nonperiodic_Sturmian_measure_history",
+  "version": 1
+}
