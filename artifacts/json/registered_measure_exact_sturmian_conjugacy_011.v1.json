@@ -1,0 +1,53 @@
+{
+  "artifact_id": "registered_measure_exact_sturmian_conjugacy_011",
+  "artifact_sha256": "fa68c25b5721f8b47863ccd77441104cac89dd229f24fdc56c1402c21f1ecf1b",
+  "audit_pass": true,
+  "boundary": {
+    "Fibonacci_rule_native": false,
+    "algebraic_rotation_native": false,
+    "exact_symbolic_conjugacy_closed": true,
+    "frequency_correspondence_closed_natively": false,
+    "native_registered_history_provenance_closed": false
+  },
+  "checks": {
+    "Audit010_passes": true,
+    "Fibonacci_B_position_law": true,
+    "beta_equals_inverse_alpha": true,
+    "binary_histories_identical_from_zero_set": true,
+    "complementary_floor_identity": true,
+    "infinite_zero_sets_identical": true,
+    "integer_shift_moves_inside_floor": true,
+    "mechanical_zero_indicator_is_alpha_characteristic_word": true,
+    "mechanical_zero_positions_equal_floor_k_over_alpha": true,
+    "morphic_zero_position_law": true,
+    "morphic_zero_positions_equal_floor_k_over_alpha": true,
+    "mu_plus_alpha_one": true
+  },
+  "earned_statement": "The finite-morphism and bounded-residual constructions are exactly the same infinite Sturmian registered history, not merely a finite-prefix coincidence. In the Fibonacci fixed word the kth B lies at floor(k phi^2). Under B->10 its zero is shifted by k positions, giving floor(k(phi^2+1)). Since phi^2+1=1/alpha with alpha=(5-sqrt(5))/10, these are exactly the zero positions floor(k/alpha) of the phase-aligned mechanical word of one-density mu=(5+sqrt(5))/10.",
+  "exact_parameters": {
+    "one_density": "(5+sqrt(5))/10",
+    "zero_Beatty_spacing": "phi^2+1=1/alpha",
+    "zero_density": "(5-sqrt(5))/10"
+  },
+  "finite_morphism_representation": {
+    "kth_B_source_position": "floor(k*phi^2)",
+    "kth_zero_output_position": "floor(k/alpha)",
+    "morphism": "A->1; B->10",
+    "substitution": "A->AB; B->A"
+  },
+  "mechanical_representation": {
+    "increment": "mu",
+    "kth_zero_position": "floor(k/alpha)",
+    "one_indicator": "floor((n+1)mu)-floor(n mu)",
+    "phase": "r0=mu",
+    "zero_indicator": "floor((n+1)alpha)-floor(n alpha)"
+  },
+  "next_gate": "Test native provenance of this single exact Sturmian history. A native recurrence, substitution, Beatty return law, or algebraic phase action counts as evidence for the same object; do not create another frequency mechanism.",
+  "theorem": {
+    "finite_prefix_only": false,
+    "same_infinite_binary_history": true,
+    "same_infinite_zero_set": true
+  },
+  "verdict": "the_Fibonacci_substitution_followed_by_A_to_1_B_to_10_and_the_phase_aligned_bounded_residual_rotation_with_mu_equal_5_plus_sqrt5_over_10_define_exactly_the_same_infinite_binary_Sturmian_registered_history",
+  "version": 1
+}
