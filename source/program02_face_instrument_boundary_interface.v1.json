@@ -1,0 +1,40 @@
+{
+  "schema": "quantum_relativity.program02_face_instrument_boundary_interface",
+  "version": 1,
+  "status": "sealed_prior_theorem_interface",
+  "sources": {
+    "analyzer_carrier": "epr_local_analyzer_carrier_interface_020",
+    "face_povm": "epr_sampled_face_receipt_povm_descent_027",
+    "bell_obstruction": "epr_sampled_coherent_bell_capacity_obstruction_028"
+  },
+  "analyzer_geometry": {
+    "native_sector_dimension": 3,
+    "face_adjoint_dimension": 3,
+    "candidate_bridge": "isometric identification of analyzer axis space with face su(2) adjoint",
+    "candidate_bridge_constructed": false,
+    "ideal_reflection": "O_i=2 Pi_i-I"
+  },
+  "sampled_face_povm": {
+    "constructed": true,
+    "normalized": true,
+    "positive": true,
+    "nonclean_receipts_retained": true,
+    "effect_form": "E_(i,r)=alpha_r P_i+beta_r(I-P_i)",
+    "binary_observable": "A_i=bias I+contrast n_i.sigma",
+    "state_update_instrument_constructed": false
+  },
+  "bell_capacity": {
+    "native_six_axis_geometry_Bell_capable": true,
+    "sampled_face_response_Bell_capable": false,
+    "sampled_calibration_pair_count": 256,
+    "all_sampled_pairs_CHSH_at_most_2": true,
+    "obstruction_state_independent": true,
+    "ideal_equal_unbiased_visibility_threshold": 0.9241763718304448
+  },
+  "boundary": {
+    "ideal_local_spectral_interface_algebraically_closed": true,
+    "native_face_projector_binding_closed": false,
+    "sampled_face_instrument_sufficient_for_Bell": false,
+    "other_unsampled_or_native_dynamics_excluded": false
+  }
+}

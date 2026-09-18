@@ -1,0 +1,56 @@
+{
+  "artifact_id": "registered_measure_face_instrument_realization_boundary_020",
+  "artifact_sha256": "ada3489bd8306badea7303d664b52a5d562873463088326e372eabbeb15b60e9",
+  "audit_pass": true,
+  "boundary": {
+    "Bell_architecture_problem": false,
+    "all_possible_face_dynamics_excluded": false,
+    "current_sampled_face_family_sufficient": false,
+    "native_face_axis_binding_open": true,
+    "native_nonperiodic_history_provenance_open": true,
+    "probability_weight_problem": false,
+    "setting_schedule_problem": false,
+    "sufficient_face_instrument_contrast_open": true
+  },
+  "checks": {
+    "Audit019_passes": true,
+    "Bell_obstruction_state_independent": true,
+    "all_256_sampled_pairs_bounded_by_2": true,
+    "analyzer_and_face_adjoint_dimensions_match": true,
+    "face_interface_sealed": true,
+    "ideal_local_setting_interface_closed": true,
+    "native_axis_geometry_itself_remains_Bell_capable": true,
+    "native_geometry_bridge_correctly_open": true,
+    "nonclean_receipts_retained": true,
+    "remote_setting_absent_from_local_operator": true,
+    "sampled_face_POVM_exists": true,
+    "sampled_face_POVM_normalized": true,
+    "sampled_face_POVM_positive": true,
+    "sampled_face_response_Bell_incapable": true
+  },
+  "earned_statement": "The remaining local apparatus gap is no longer a Bell, probability, or setting-schedule ambiguity. Audit019 closes the ideal local spectral interfaces algebraically. Program02 shows that the analyzer sector and face adjoint both have dimension three, but no native isometric binding of the six analyzer directions to the face adjoint has been constructed. Separately, the actually constructed sampled face POVMs are positive, normalized, complete, and retain nonclean outputs, but their bias/contrast observables are state-independently CHSH-incapable for all 256 sampled Alice/Bob calibration pairs. Thus physical face realization requires both a native axis binding and a sufficiently sharp normalized local instrument.",
+  "geometry_gate": {
+    "analyzer_dimension": 3,
+    "candidate_isometry_available": true,
+    "face_adjoint_dimension": 3,
+    "native_binding_constructed": false
+  },
+  "ideal_interface": {
+    "joint_nonfactorizable_source": true,
+    "local_projectors": "closed algebraically",
+    "remote_setting_in_local_operator": false
+  },
+  "instrument_gate": {
+    "binary_observable": "bias I + contrast n.sigma",
+    "complete_receipts_retained": true,
+    "normalized": true,
+    "positive": true,
+    "sampled_CHSH_capable": false,
+    "sampled_face_POVM_constructed": true,
+    "sampled_pair_count": 256,
+    "state_independent_obstruction": true
+  },
+  "next_gate": "Do not revisit EPR weighting, Bell-local factorization, or setting multiplexing. The apparatus front is now exactly two questions: construct the native analyzer-to-face adjoint binding, and derive a normalized face response with sufficient contrast. Native nonperiodic frequency-history provenance remains the separate history front.",
+  "verdict": "the_ideal_local_projector_interface_is_algebraically_closed_but_physical_face_realization_remains_open_for_two_independent_reasons_the_native_analyzer_to_face_adjoint_binding_is_not_yet_constructed_and_the_current_sampled_normalized_face_POVM_family_is_state_independently_CHSH_incapable",
+  "version": 1
+}
