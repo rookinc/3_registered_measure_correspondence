@@ -1,0 +1,62 @@
+{
+  "artifact_id": "registered_measure_program_reclosure_022",
+  "artifact_sha256": "b8b74be7079572110c791b909de9d12960301bc49f9e0fd1ec3e81207341135d",
+  "audit_pass": true,
+  "boundary": {
+    "Program03_native_history_provenance_closed": false,
+    "Program03_registered_measure_correspondence_closed": true,
+    "face_instrument_work_belongs_upstream": true,
+    "new_Bell_local_model_search_needed": false,
+    "new_setting_schedule_mechanism_needed": false,
+    "new_weighting_search_needed": false
+  },
+  "checks": {
+    "Audit014_passes": true,
+    "Audit015_passes": true,
+    "Audit016_passes": true,
+    "Audit017_passes": true,
+    "Audit018_passes": true,
+    "Audit019_passes": true,
+    "Audit020_passes": true,
+    "Audit021_passes": true,
+    "Bell_local_factorization_excluded": true,
+    "current_sampled_face_family_insufficient": true,
+    "event_ready_herald_closed": true,
+    "face_axis_binding_open": true,
+    "face_contrast_open": true,
+    "face_problem_upstream": true,
+    "growing_history_required_for_exact_irrational_frequency": true,
+    "ideal_local_operator_interface_closed": true,
+    "native_nonperiodic_history_open": true,
+    "registration_cannot_repair_face_instrument": true,
+    "setting_multiplexing_closed": true,
+    "single_context_full_table_closed": true,
+    "static_finite_recurrence_not_sufficient": true
+  },
+  "closed": {
+    "Bell_local_hidden_answer_route": "excluded",
+    "arbitrary_setting_interleaving": true,
+    "event_ready_source_ordering": true,
+    "ideal_local_setting_operator_interface": true,
+    "registration_measure_preserving": true,
+    "retrospective_outcome_postselection": false,
+    "single_context_four_cell_registration": true
+  },
+  "earned_statement": "Program03 now separates measure realization from both upstream instrument transduction and native history provenance. The complete four-cell EPR tables admit deterministic bounded-discrepancy registration under arbitrary setting interleaving, with event-ready source ordering and strictly local setting operators acting on the nonfactorizable joint preparation. Registration is measure-preserving and cannot repair the weak sampled face instrument, so analyzer-to-face binding and instrument contrast belong upstream. The sole remaining Program03 theorem front is native provenance of a genuinely growing nonperiodic registered history.",
+  "moved_upstream": {
+    "Program03_history_layer_can_repair": false,
+    "current_sampled_face_family": "CHSH-incapable",
+    "native_analyzer_to_face_axis_binding": "open",
+    "sufficient_normalized_face_instrument_contrast": "open"
+  },
+  "next_gate": "Do not continue weighting, Bell-factorization, scheduling, or face-response searches inside Program03. Resume Program03 only when new native structure can supply a genuinely growing history or endogenous nonperiodic selector from which the certified Sturmian registration law can be derived.",
+  "remaining_Program03_front": {
+    "known_native_finite_recurrence": "insufficient",
+    "name": "native nonperiodic growing registered history provenance",
+    "required_character": "genuinely history-bearing and not reducible to a fixed finite autonomous orbit",
+    "status": "open",
+    "target": "derive rather than prescribe the nonperiodic continuation law"
+  },
+  "verdict": "Program03_is_reclosed_with_registered_measure_realization_complete_through_full_four_cell_tables_arbitrary_setting_multiplexing_event_ready_heralding_and_local_operator_interfaces_while_face_axis_binding_and_instrument_contrast_are_upstream_apparatus_problems_and_native_nonperiodic_growing_history_provenance_is_the_single_remaining_Program03_front",
+  "version": 1
+}
