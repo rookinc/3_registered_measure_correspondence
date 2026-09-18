@@ -1,0 +1,22 @@
+{
+  "schema": "quantum_relativity.program02.algebraic_epr_interface",
+  "version": 1,
+  "source_program": "2_epr_joint_chiral_transduction",
+  "source_terminal_artifact": "epr_algebraic_assembly_lock_042",
+  "status": "sealed_input_interface",
+  "joint_contraction": "Gamma(A,B)=Tr[P_odd(A tensor B)]",
+  "traceless_joint_kernel": "Gamma(A,B)=-1/2 Tr(AB)",
+  "native_visibility": "1/sqrt(5)",
+  "binary_weight_law": "w_ab=(1+a*b*Gamma)/4",
+  "distinct_setting_weights": [
+    "1/4-sqrt(5)/20",
+    "1/4+sqrt(5)/20"
+  ],
+  "frozen_quartet_CHSH": "1+3/sqrt(5)",
+  "local_marginals": "1/2",
+  "boundary": {
+    "algebraic_EPR_assembly_closed": true,
+    "operational_frequency_correspondence_open": true,
+    "common_adjoint_face_binding_conditional": true
+  }
+}

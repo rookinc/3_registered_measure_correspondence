@@ -1,0 +1,56 @@
+{
+  "artifact_id": "registered_measure_finite_count_obstruction_001",
+  "artifact_sha256": "a982369f3e21f4528a29aeb62876f6cc08c707e9d39ee4bd1f4e8c82858ec163",
+  "audit_pass": true,
+  "boundary": {
+    "derives_operational_frequency_correspondence": false,
+    "rules_out_algebraic_transition_weights": false,
+    "rules_out_approximation_by_rational_frequencies": false,
+    "rules_out_finite_deterministic_periodic_exact_frequency": true,
+    "rules_out_finite_equal_count_hidden_census": true,
+    "rules_out_infinite_time_convergence": false,
+    "rules_out_nonperiodic_registered_history": false,
+    "rules_out_stochastic_finite_processes": false
+  },
+  "checks": {
+    "Program02_algebraic_EPR_closed": true,
+    "Program02_interface_sealed": true,
+    "every_finite_equal_count_ratio_is_rational": true,
+    "finite_deterministic_dynamics_eventually_periodic": true,
+    "frequency_correspondence_open": true,
+    "irrational_weight_not_exact_periodic_visit_frequency": true,
+    "nontrivial_weights_are_irrational": true,
+    "periodic_cycle_visit_frequency_is_rational": true,
+    "representative_cycle_scan_has_no_exact_float_collision": true,
+    "sqrt5_is_irrational_by_squarefree_integer_theorem": true,
+    "w_minus_not_finite_equal_count_ratio": true,
+    "w_plus_not_finite_equal_count_ratio": true
+  },
+  "distinctions": {
+    "algebraic_measure": "canonical positive weight fixed by relational operator geometry",
+    "finite_state_count": "ratio of integer multiplicities on a finite set",
+    "registered_frequency": "empirical or asymptotic occurrence frequency in repeated registered events",
+    "these_are_not_identified": true
+  },
+  "earned_statement": "The nontrivial Program-02 binary weights contain sqrt(5) and are irrational. Every finite equal-count realization is a rational ratio k/N. Every deterministic trajectory on a finite state space is eventually periodic, and every exact limiting visit frequency on its eventual cycle is a rational ratio m/L. Therefore the Program-02 weights cannot be exact finite hidden-state count ratios or exact limiting visit frequencies of any finite deterministic state machine. Program 03 must seek a correspondence mechanism richer than static finite counting or eventual periodicity.",
+  "imported_interface": {
+    "source": "/data/data/com.termux/files/home/dev/cori/research/physics/quantum_relativity/3_registered_measure_correspondence/source/program02_algebraic_epr_interface.v1.json",
+    "source_terminal_artifact": "epr_algebraic_assembly_lock_042",
+    "weights": [
+      "1/4-sqrt(5)/20",
+      "1/4+sqrt(5)/20"
+    ]
+  },
+  "next_gate": "Classify the weakest finite registered dynamics capable of supporting an irrational invariant measure without inserting the Program-02 weights as transition probabilities.",
+  "theorem": {
+    "Program02_nontrivial_weight_number_class": "irrational",
+    "exact_finite_deterministic_visit_frequency_realization": false,
+    "exact_finite_equal_count_realization": false,
+    "finite_deterministic_long_run_form": "m/L after eventual periodicity",
+    "finite_deterministic_long_run_number_class": "rational",
+    "finite_equal_count_form": "k/N",
+    "finite_equal_count_number_class": "rational"
+  },
+  "verdict": "program02_nontrivial_algebraic_weights_are_irrational_and_therefore_cannot_be_exact_finite_equal_count_ratios_or_exact_limiting_visit_frequencies_of_any_finite_deterministic_state_machine",
+  "version": 1
+}
