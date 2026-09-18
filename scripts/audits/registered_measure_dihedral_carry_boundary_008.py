@@ -1,0 +1,358 @@
+#!/usr/bin/env python3
+
+from hashlib import sha256
+from pathlib import Path
+import json
+
+HERE = Path(__file__).resolve().parents[2]
+
+A007 = (
+    HERE
+    / "artifacts/json"
+    / "registered_measure_native_accumulator_provenance_007.v1.json"
+)
+
+SRC = (
+    HERE
+    / "source"
+    / "dihedral_receipt_carry_interface.v1.json"
+)
+
+JSON_OUT = (
+    HERE
+    / "artifacts/json"
+    / "registered_measure_dihedral_carry_boundary_008.v1.json"
+)
+
+NOTE_OUT = (
+    HERE
+    / "notes"
+    / "registered_measure_dihedral_carry_boundary_008.md"
+)
+
+
+def load(p):
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+def digest(obj):
+    raw = json.dumps(
+        obj,
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=True,
+    ).encode("ascii")
+    return sha256(raw).hexdigest()
+
+
+print("== 008 DIHEDRAL CARRY BOUNDARY ==")
+
+a007 = load(A007)
+src = load(SRC)
+
+checks = {}
+
+checks["Audit007_passes"] = (
+    a007["audit_pass"] is True
+)
+
+checks["prior_theorem_interface_sealed"] = (
+    src["status"] == "sealed_prior_theorem_interface"
+)
+
+print("PROGRESS: 1/4 verify native discrete return receipt")
+
+g = src["general"]
+
+checks["H_has_order_2n"] = (
+    g["H_order"] == "2n"
+)
+
+checks["return_receipt_is_H_to_n"] = (
+    g["return_receipt"] == "H^n"
+)
+
+checks["return_receipt_has_order_two"] = (
+    g["return_receipt_order"] == 2
+)
+
+checks["return_receipt_unique"] = (
+    g["return_receipt_unique_in_H_cycle"] is True
+)
+
+print(
+    "GENERAL_RETURN_RECEIPT:",
+    "tau=H^n",
+)
+
+print(
+    "RETURN_RECEIPT_ORDER:",
+    2,
+)
+
+
+print("PROGRESS: 2/4 verify four-phase carry structure")
+
+f = src["four_phase_case"]
+
+checks["four_phase_H_order_eight"] = (
+    f["H_order"] == 8
+)
+
+checks["four_phase_receipt_H4"] = (
+    f["return_receipt"] == "H^4"
+)
+
+checks["four_phase_receipt_commutator_square"] = (
+    f["return_receipt_as_commutator_power"]
+    == "commutator^2"
+)
+
+checks["second_half_closes_lift"] = (
+    f["full_lift_return"] == "H^8=1"
+)
+
+print(
+    "FOUR_PHASE_FIRST_RETURN:",
+    "H^4=tau",
+)
+
+print(
+    "FOUR_PHASE_FULL_LIFT_RETURN:",
+    "H^8=1",
+)
+
+print(
+    "DISCRETE_CARRY_GRAMMAR:",
+    "first circuit -> return receipt -> second circuit -> full closure",
+)
+
+
+print("PROGRESS: 3/4 separate discrete carry from algebraic phase")
+
+b = src["boundary"]
+
+checks["discrete_return_receipt_native"] = (
+    b["discrete_return_receipt_native"] is True
+)
+
+checks["algebraic_fractional_register_left_open"] = (
+    b["algebraic_fractional_register_native"] is False
+)
+
+checks["ordered_unit_threshold_left_open"] = (
+    b["ordered_unit_threshold_native"] is False
+)
+
+checks["Qsqrt5_embedding_left_open"] = (
+    b["Q_sqrt5_residual_embedding_native"] is False
+)
+
+print(
+    "DISCRETE_RETURN_RECEIPT:",
+    "NATIVE",
+)
+
+print(
+    "ALGEBRAIC_FRACTIONAL_REGISTER:",
+    "OPEN",
+)
+
+print(
+    "ORDERED_UNIT_THRESHOLD:",
+    "OPEN",
+)
+
+print(
+    "Q_SQRT5_RESIDUAL_EMBEDDING:",
+    "OPEN",
+)
+
+
+print("PROGRESS: 4/4 classify")
+
+failed = [
+    k
+    for k, v in checks.items()
+    if not v
+]
+
+audit_pass = not failed
+
+verdict = (
+    "the_prior_dihedral_receipt_theorem_supplies_a_native_discrete_"
+    "wrap_and_return_receipt_grammar_but_does_not_supply_the_"
+    "algebraic_fractional_phase_or_ordered_unit_threshold_required_"
+    "for_exact_irrational_measure_accumulation"
+    if audit_pass
+    else
+    "dihedral_carry_boundary_gate_failed"
+)
+
+artifact = {
+    "artifact_id":
+        "registered_measure_dihedral_carry_boundary_008",
+
+    "version":
+        1,
+
+    "audit_pass":
+        audit_pass,
+
+    "verdict":
+        verdict,
+
+    "native_discrete_carry": {
+        "general_cycle":
+            "H has order 2n",
+
+        "return_receipt":
+            "tau=H^n",
+
+        "receipt_order":
+            2,
+
+        "four_phase_midpoint":
+            "H^4=tau",
+
+        "four_phase_full_return":
+            "H^8=1",
+
+        "status":
+            "native"
+    },
+
+    "remaining_correspondence_gate": {
+        "algebraic_measure":
+            "(5+sqrt(5))/10",
+
+        "needed_structure":
+            (
+                "embed the algebraic measure into an ordered "
+                "fractional carry register"
+            ),
+
+        "fractional_register_status":
+            "open",
+
+        "ordered_threshold_status":
+            "open"
+    },
+
+    "checks":
+        checks,
+
+    "boundary": {
+        "discrete_carry_promoted_native":
+            True,
+
+        "Audit006_full_residual_rule_promoted_native":
+            False,
+
+        "Q_sqrt5_fractional_phase_native":
+            False,
+
+        "frequency_correspondence_closed":
+            False
+    },
+
+    "earned_statement": (
+        "The finite receipt tower already contains the discrete carry "
+        "grammar required by the bounded-residual witness. A cycle "
+        "generated by H has a distinguished halfway return receipt "
+        "tau=H^n of order two, and the four-phase case has H^4=tau "
+        "with full lifted return H^8=1. Thus discrete wrap, receipt, "
+        "and later full closure are native. What remains absent is an "
+        "ordered fractional register carrying the already-derived "
+        "algebraic measure in Q(sqrt(5))."
+    ),
+
+    "next_gate": (
+        "Construct or reject an exact algebraic phase embedding of "
+        "the native measure into the native carry grammar. Do not "
+        "search for another probability law."
+    )
+}
+
+artifact["artifact_sha256"] = digest(artifact)
+
+JSON_OUT.parent.mkdir(parents=True, exist_ok=True)
+NOTE_OUT.parent.mkdir(parents=True, exist_ok=True)
+
+JSON_OUT.write_text(
+    json.dumps(
+        artifact,
+        indent=2,
+        sort_keys=True,
+        ensure_ascii=True,
+    ) + "\n",
+    encoding="ascii",
+)
+
+NOTE_OUT.write_text(
+    """# Dihedral carry boundary 008
+
+## Result
+
+The existing receipt tower already supplies a discrete carry grammar.
+
+For a lifted cycle generated by H,
+
+    |H| = 2n
+
+and the distinguished return receipt is
+
+    tau = H^n,
+
+the unique order-two element of the H-cycle.
+
+For the four-phase case,
+
+    H^4 = tau
+
+while
+
+    H^8 = 1.
+
+Thus one visible circuit can leave a nontrivial return receipt, while the
+second closes the lifted cycle.
+
+This establishes native discrete wrap and return-receipt structure.
+
+## Remaining gate
+
+The theorem does not supply an ordered fractional register
+
+    r in [0,1)
+
+or an embedding of
+
+    mu = (5+sqrt(5))/10
+
+into such a register.
+
+Therefore the remaining correspondence problem is not discrete carry.
+
+It is algebraic phase embedding:
+
+    native algebraic measure
+      -> ordered fractional residue
+      -> already-native discrete carry/receipt grammar.
+""",
+    encoding="ascii",
+)
+
+print()
+print("AUDIT_PASS:", audit_pass)
+print("VERDICT:", verdict)
+print("FAILED_CHECK_COUNT:", len(failed))
+print("FAILED_CHECKS:", failed)
+print("DISCRETE_CARRY_GRAMMAR:", "NATIVE")
+print("ALGEBRAIC_FRACTIONAL_EMBEDDING:", "OPEN")
+print("NEXT_GATE:", "algebraic_phase_embedding")
+print("JSON_OUT:", JSON_OUT)
+print("NOTE_OUT:", NOTE_OUT)
+print(
+    "JSON_SHA256:",
+    sha256(JSON_OUT.read_bytes()).hexdigest(),
+)

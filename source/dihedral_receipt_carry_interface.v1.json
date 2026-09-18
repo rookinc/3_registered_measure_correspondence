@@ -1,0 +1,28 @@
+{
+  "schema": "quantum_relativity.dihedral_receipt_carry_interface",
+  "version": 1,
+  "status": "sealed_prior_theorem_interface",
+  "source": "Parity in the Dihedral Receipt Tower",
+  "general": {
+    "H_order": "2n",
+    "commutator": "H^2",
+    "commutator_order": "n",
+    "return_receipt": "H^n",
+    "return_receipt_order": 2,
+    "return_receipt_unique_in_H_cycle": true
+  },
+  "four_phase_case": {
+    "n": 4,
+    "H_order": 8,
+    "commutator": "H^2",
+    "return_receipt": "H^4",
+    "return_receipt_as_commutator_power": "commutator^2",
+    "full_lift_return": "H^8=1"
+  },
+  "boundary": {
+    "discrete_return_receipt_native": true,
+    "algebraic_fractional_register_native": false,
+    "ordered_unit_threshold_native": false,
+    "Q_sqrt5_residual_embedding_native": false
+  }
+}
